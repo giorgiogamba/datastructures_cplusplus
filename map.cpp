@@ -21,12 +21,12 @@ We are gonna implement a map as an array of lists, a very classical way.
 This way we are gonna keep the advantages of using an array, which is the constant time access
 
 */
-class map
+class Map
 {
 
 public:
 
-	map()
+	Map()
 	{
 		CurrMapIndicesSize = STANDARD_ARRAY_SIZE;
 	};
