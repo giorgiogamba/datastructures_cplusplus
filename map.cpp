@@ -1,6 +1,8 @@
 // Giorgio Gamba
 // Example class containing an implementation of a hash map
 
+#include <iostream>
+
 #include "linkedList.cpp"
 
 /*
@@ -49,6 +51,16 @@ public:
 	void Rebalance()
 	{
 		CurrMapIndicesSize *= 2;
+	}
+
+	// Prints the current map in format [key, elements]
+	void Print()
+	{
+		for (int i = 0; i < CurrMapIndicesSize; ++i)
+		{
+			std::cout << "[" << i << std::endl;
+			Lists[i].Print();
+		}
 	}
 
 private:
