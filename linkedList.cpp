@@ -64,6 +64,13 @@ public:
 		CurrNode->Next = NewNode;
 	}
 
+	// Adds a node with the given value
+	void Add(const int Value)
+	{
+		Node* NewNode = new Node(Value);
+		Add(NewNode);
+	}
+
 	// Removes all the nodes containing the provided value
 	void Remove(const int Value)
 	{
